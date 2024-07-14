@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homeStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page">
+        <div id="container">
+            <h3>oi</h3>
+            <form method="post">
+                <select name="local" id="local">
+                    <option value="RJ" >Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+                <button type="submit" id="verify">Verificar</button>
+            </form>
+
+            <h2><% if (temp){ %>
+                <%= temp %>
+                <% } %> °C
+            </h2>
+
+            <h3>Cidade: <% if (place){ %>
+                <%= place %>
+                <% } %>
+            </h3>
+
+        </div>
+    </div>
+</body>
+</html>
